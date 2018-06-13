@@ -41,7 +41,7 @@ yarn install
 
 #### functions
 
-1. `/functions`に移動する
+1. `/functions`に移動する
 2. ソースコードを書く
 3. 以下を実行して挙動を確かめる
 
@@ -51,7 +51,7 @@ yarn start
 
 4. 2に戻る
 
-#### hosting
+#### hosting
 
 1. 以下コマンドを実行する
 
