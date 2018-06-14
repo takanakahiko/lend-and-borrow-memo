@@ -17,3 +17,4 @@ type CreatersUserID extends String {
 }
 
 isMe(uid) { auth != null && uid == currentUser() }
+currentUser() { auth.uid }
