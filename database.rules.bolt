@@ -1,5 +1,19 @@
 path / {
-  read() { true }
+  read() { false }
   write() { false }
 }
 
+path /lend_events/{key} is LendEvent;
+
+type LendEvent{
+  create() { auth != null }
+  update() { auth != null }
+  created_at: String
+  lender : CreatersUserID
+}
+
+type CreatersUserID extends String {
+  validate() { isMe(this) }
+}
+
+isMe(uid) { auth != null && uid == currentUser() }
